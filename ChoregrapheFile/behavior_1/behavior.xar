@@ -106,7 +106,7 @@
 
     def onInput_onStart(self):
         #self.onStopped() #activate the output of the box
-        self.tts.say("HelloWorld");
+        self.tts.say("Test Push");
         pass
 
     def onInput_onStop(self):
