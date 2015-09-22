@@ -10,8 +10,28 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="behavior_1">
+  <behaviorContent path=".">
    <nature>solitary</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="End Application">
+   <nature>interactive</nature>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/MiddleTactilTouched') ~ 3 & ('Launchpad/RearTactilTouched') ~ 3 &
+('Launchpad/FrontTactilTouched') ~ 3]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="Emergency Mode">
+   <nature>interactive</nature>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/NumMotionZone1' >= 1) ~ 1 &
+('Launchpad/NumMotionZone2' >= 1) ~ 1 &
+('Launchpad/NumMotionZone3' >= 1) ~ 1 ]]></condition>
+   </autonomous>
    <permissions/>
   </behaviorContent>
  </contents>
