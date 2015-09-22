@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="StopAll" id="2" localization="8" tooltip="" x="166" y="10">
+                        <Box name="StopAll" id="2" localization="8" tooltip="" x="163" y="12">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
