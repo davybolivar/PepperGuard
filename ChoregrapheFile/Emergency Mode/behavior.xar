@@ -373,9 +373,9 @@ class MyClass(GeneratedClass):
         source= self.memory.getData("DetectSource")
         self.tts.say(str(source))
         if(source == 1):
-            self.tts.say("I detect someone")
+            self.tts.say("I detect movement")
         elif(source == 2):
-            self.tts.say("I detect movement")]]>
+            self.tts.say("I hear someone")]]>
 </content>
                             </script>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
