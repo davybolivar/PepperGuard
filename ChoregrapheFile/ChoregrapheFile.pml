@@ -17,6 +17,10 @@
         <File name="Index" src="html/Index.html" />
         <File name="qi" src="html/libs/qi.js" />
         <File name="Function" src="html/scripts/Function.js" />
+        <File name="" src="html/.DS_Store" />
+        <File name="tile" src="html/css/images/tile.png" />
+        <File name="loading" src="html/css/loading.css" />
+        <File name="loading" src="html/loading.html" />
     </Resources>
     <Topics />
     <IgnoredPaths />

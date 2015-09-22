@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" uuid="choregraphefile-e179e4">
+<package uuid="choregraphefile-e179e4" version="0.0.0">
  <names>
   <name lang="en_US">ChoregrapheFile</name>
  </names>
@@ -12,6 +12,9 @@
  <contents>
   <behaviorContent path="behavior_1">
    <nature>solitary</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
  </contents>
