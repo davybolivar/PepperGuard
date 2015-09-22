@@ -341,27 +341,25 @@ class MyClass(GeneratedClass):
 
 		self.tts = ALProxy("ALTextToSpeech")
 		self.sentences = {
-			"Arabic" : " مرحبا ",
-			"Czech" : " Ahoj ",
-			"Danish" : " Hej ",
-			"German" : " Hallo ",
-			"Greek" : "  ",
+			"Chinese" : " 你好 ",
 			"English" : " I\'m going to guard! ",
-			"Spanish" : " Hola ",
-			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
+			"German" : " Hallo ",
 			"Italian" : " Ciao ",
 			"Japanese" : " こんにちは ",
 			"Korean" : " 안녕하세요 ",
-			"Dutch" : " Hallo ",
-			"Norwegian" : "  ",
-			"Polish" : " Cześć ",
-			"Brazilian" : " Olá ",
 			"Portuguese" : " Olá ",
-			"Russian" : " Привет ",
+			"Brazilian" : " Olá ",
+			"Spanish" : " Hola ",
+			"Arabic" : " مرحبا ",
+			"Polish" : " Cześć ",
+			"Czech" : " Ahoj ",
+			"Dutch" : " Hallo ",
+			"Danish" : " Hej ",
+			"Finnish" : " Hei ",
 			"Swedish" : " Hallå ",
-			"Turkish" : " Merhaba ",
-			"Chinese" : " 你好 "
+			"Russian" : " Привет ",
+			"Turkish" : " Merhaba "
 		}
 
 	def onInput_onStart(self):
@@ -370,33 +368,18 @@ class MyClass(GeneratedClass):
 </content>
                                                                     </script>
                                                                     <pluginContent>
-                                                                        <arabic>
-                                                                            <![CDATA[مرحبا]]>
-</arabic>
-                                                                        <czech>
-                                                                            <![CDATA[Ahoj]]>
-</czech>
-                                                                        <danish>
-                                                                            <![CDATA[Hej]]>
-</danish>
-                                                                        <german>
-                                                                            <![CDATA[Hallo]]>
-</german>
-                                                                        <greek>
-                                                                            <![CDATA[]]>
-</greek>
+                                                                        <chinese>
+                                                                            <![CDATA[你好]]>
+</chinese>
                                                                         <english>
                                                                             <![CDATA[I'm going to guard!]]>
 </english>
-                                                                        <spanish>
-                                                                            <![CDATA[Hola]]>
-</spanish>
-                                                                        <finnish>
-                                                                            <![CDATA[Hei]]>
-</finnish>
                                                                         <french>
                                                                             <![CDATA[Bonjour]]>
 </french>
+                                                                        <german>
+                                                                            <![CDATA[Hallo]]>
+</german>
                                                                         <italian>
                                                                             <![CDATA[Ciao]]>
 </italian>
@@ -406,33 +389,42 @@ class MyClass(GeneratedClass):
                                                                         <korean>
                                                                             <![CDATA[안녕하세요]]>
 </korean>
-                                                                        <dutch>
-                                                                            <![CDATA[Hallo]]>
-</dutch>
-                                                                        <norwegian>
-                                                                            <![CDATA[]]>
-</norwegian>
-                                                                        <polish>
-                                                                            <![CDATA[Cześć]]>
-</polish>
-                                                                        <brazilian>
-                                                                            <![CDATA[Olá]]>
-</brazilian>
                                                                         <portuguese>
                                                                             <![CDATA[Olá]]>
 </portuguese>
-                                                                        <russian>
-                                                                            <![CDATA[Привет]]>
-</russian>
+                                                                        <brazilian>
+                                                                            <![CDATA[Olá]]>
+</brazilian>
+                                                                        <spanish>
+                                                                            <![CDATA[Hola]]>
+</spanish>
+                                                                        <arabic>
+                                                                            <![CDATA[مرحبا]]>
+</arabic>
+                                                                        <polish>
+                                                                            <![CDATA[Cześć]]>
+</polish>
+                                                                        <czech>
+                                                                            <![CDATA[Ahoj]]>
+</czech>
+                                                                        <dutch>
+                                                                            <![CDATA[Hallo]]>
+</dutch>
+                                                                        <danish>
+                                                                            <![CDATA[Hej]]>
+</danish>
+                                                                        <finnish>
+                                                                            <![CDATA[Hei]]>
+</finnish>
                                                                         <swedish>
                                                                             <![CDATA[Hallå]]>
 </swedish>
+                                                                        <russian>
+                                                                            <![CDATA[Привет]]>
+</russian>
                                                                         <turkish>
                                                                             <![CDATA[Merhaba]]>
 </turkish>
-                                                                        <chinese>
-                                                                            <![CDATA[你好]]>
-</chinese>
                                                                         <language>5</language>
                                                                     </pluginContent>
                                                                     <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />

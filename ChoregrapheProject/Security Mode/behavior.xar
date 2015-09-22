@@ -35,7 +35,7 @@
         self.memory.insertData("DetectSource",2)
         self.behaviorName = "Emergency Mode"
         self.bm.runBehavior(self.behaviorName)
-        #self.bm.stopBehavior("Security Mode")]]>
+        self.bm.stopBehavior("Security Mode")]]>
 </content>
                             </script>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
@@ -59,7 +59,7 @@
         self.memory.insertData("DetectSource",1)
         self.behaviorName = "Emergency Mode"
         self.bm.runBehavior(self.behaviorName)
-        #self.bm.stopBehavior("Security Mode")]]>
+        self.bm.stopBehavior("Security Mode")]]>
 </content>
                             </script>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
@@ -69,6 +69,7 @@
                         </Box>
                         <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="4" />
                         <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="5" />
+                        <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
