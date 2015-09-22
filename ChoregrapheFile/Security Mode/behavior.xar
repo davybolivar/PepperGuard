@@ -12,8 +12,9 @@
         <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
         <Input name="MovementDetection/MovementDetected" type="0" type_size="1" nature="4" stm_value_name="MovementDetection/MovementDetected" inner="1" tooltip="MovementDetection/MovementDetected desc" id="4" />
         <Input name="ALMemory/SoundDetected" type="0" type_size="1" nature="4" stm_value_name="ALMemory/SoundDetected" inner="1" tooltip="ALMemory/SoundDetected desc" id="5" />
-        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="6" />
-        <Output name="onAlert" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
+        <Input name="ALMemory/DetectSource" type="0" type_size="1" nature="4" stm_value_name="ALMemory/DetectSource" inner="1" tooltip="ALMemory/DetectSource desc" id="6" />
+        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="7" />
+        <Output name="onAlert" type="1" type_size="1" nature="2" inner="0" tooltip="" id="8" />
         <Timeline enable="0">
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
@@ -26,10 +27,14 @@
     def __init__(self):
         GeneratedClass.__init__(self)
         self.tts = ALProxy("ALTextToSpeech")
+        self.memory = ALProxy("ALMemory")
+        self.bm = ALProxy("ALBehaviorManager")
 
     def onInput_onDetect(self):
         behavior = ALProxy('ALBehaviorManager')
-        behavior.startBehavior('shit')]]>
+        self.memory.insertData("DetectSource",2)
+        self.behaviorName = "Emergency Mode"
+        self.bm.runBehavior(self.behaviorName)]]>
 </content>
                             </script>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
@@ -45,10 +50,14 @@
     def __init__(self):
         GeneratedClass.__init__(self)
         self.tts = ALProxy("ALTextToSpeech")
+        self.memory = ALProxy("ALMemory")
+        self.bm = ALProxy("ALBehaviorManager")
 
     def onInput_onDetect(self):
         behavior = ALProxy('ALBehaviorManager')
-        behavior.startBehavior('Emergency Mode')]]>
+        self.memory.insertData("DetectSource",1)
+        self.behaviorName = "Emergency Mode"
+        self.bm.runBehavior(self.behaviorName)]]>
 </content>
                             </script>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="choregraphefile-e179e4" version="0.0.0">
+<package version="0.0.0" uuid="choregraphefile-e179e4">
  <names>
   <name lang="en_US">ChoregrapheFile</name>
  </names>
@@ -10,7 +10,7 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="behavior_1">
+  <behaviorContent path=".">
    <nature>solitary</nature>
    <permissions/>
   </behaviorContent>
@@ -19,6 +19,23 @@
    <descriptions>
     <description lang="en_US">Pepper will wait until he detects a movement or sound.</description>
    </descriptions>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="End Application">
+   <nature>interactive</nature>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/MiddleTactilTouched') ~ 3 & ('Launchpad/RearTactilTouched') ~ 3 &
+('Launchpad/FrontTactilTouched') ~ 3]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="Emergency Mode">
+   <nature>interactive</nature>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/NumMotionZone1' >= 1) ~ 1 &
+('Launchpad/NumMotionZone2' >= 1) ~ 1 &
+('Launchpad/NumMotionZone3' >= 1) ~ 1 ]]></condition>
+   </autonomous>
    <permissions/>
   </behaviorContent>
  </contents>
