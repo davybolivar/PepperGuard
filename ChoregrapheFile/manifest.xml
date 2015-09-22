@@ -12,9 +12,13 @@
  <contents>
   <behaviorContent path="behavior_1">
    <nature>solitary</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="Security Mode">
+   <nature>solitary</nature>
+   <descriptions>
+    <description lang="en_US">Pepper will wait until he detects a movement or sound.</description>
+   </descriptions>
    <permissions/>
   </behaviorContent>
  </contents>
